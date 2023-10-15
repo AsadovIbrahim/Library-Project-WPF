@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AuthorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BooksPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CategoryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DepartmentsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FacultiesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GroupPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LibsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PressPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SCardsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StudentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TCardsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TeachersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ThemesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ResourceDictionaries\MainDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AuthorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BooksPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CategoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DepartmentsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FacultiesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GroupPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LibsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PressPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SCardsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StudentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TCardsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TeachersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ThemesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

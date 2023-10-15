@@ -1,0 +1,149 @@
+﻿<Window x:Class="Library_WPF.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_WPF.Views"
+        mc:Ignorable="d"
+        Title="MainView" Height="560" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <!--Background Border-->
+
+        <Border Background="#ECF0F1"
+                CornerRadius="10"/>
+        <!--Header-->
+
+        <Border Background="#5C5C5C"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                CornerRadius="10,0,100,0"
+                Height="80"
+                Width="850">
+
+            <TextBlock Text="L I B R A R Y  D A T A B A S E"
+                       Style="{StaticResource HeaderStyle}"/>
+
+        </Border>
+
+        <!--Footer-->
+
+        <Border Background="#5C5C5C"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                CornerRadius="100,0,10,0"
+                Height="80"
+                Width="850">
+
+            <TextBlock Margin="0,50,0,0" Text="E N T I T Y   F R A M E W O R K"
+                       Style="{StaticResource FooterStyle}"/>
+
+        </Border>
+
+        <Border Background="#303030"
+                BorderBrush="#FFFFFF"
+                BorderThickness="0,5,0,5"
+                Height="480"
+                Margin="0,10,0,0"
+                CornerRadius="25"/>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+
+
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="660"/>
+                <ColumnDefinition Width="25"/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="370"/>
+                <RowDefinition Height="0"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="2"
+                  Grid.Column="1">
+
+
+
+                <TextBox x:Name="SearchBox"
+                         Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource SearchBoxStyle}"/>
+
+                <TextBlock Text="Search"
+                 
+                           
+                           Style="{StaticResource SearchTextStyle}"/>
+            </Grid>
+
+
+
+            <Grid Grid.Row="3"
+                  Grid.Column="1"
+                  Margin="0,10,0,0">
+
+                <ScrollViewer>
+                    <StackPanel>
+                        <Button Command="{Binding AuthorsCommand}" Height="40" Content="Authors" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding BooksCommand}" Height="40" Content="Books" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding CategoriesCommand}" Height="40" Content="Categories" Style="{StaticResource tables}" ></Button>
+                        <Button Command="{Binding DepartmentsPageCommand}" Height="40" Content="Departments" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding FacultiesPageCommand}" Height="40" Content="Faculties" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding GroupsCommand}" Height="40" Content="Groups" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding LibsCommand}" Height="40" Content="Libs" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding PressCommand}" Height="40" Content="Press" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding S_CardCommand}" Height="40" Content="S_Cards" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding StudentsCommand}" Height="40" Content="Students" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding T_CardCommand}"  Height="40" Content="T_Cards" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding TeachersCommand}" Height="40" Content="Teachers" Style="{StaticResource tables}"></Button>
+                        <Button Command="{Binding ThemesCommand}" Height="40" Content="Themes" Style="{StaticResource tables}"></Button>
+                    </StackPanel>
+                </ScrollViewer>
+
+
+
+
+
+            </Grid>
+
+            <!--Page Container-->
+
+            <Grid Grid.Row="2"
+                  Grid.Column="3"
+                  Grid.RowSpan="2"
+                  Background="Transparent">
+
+                <Frame Name="currentFrame" NavigationUIVisibility="Hidden"/>
+            </Grid>
+
+
+
+        </Grid>
+
+        <!--Close Button-->
+
+        <Button Height="30"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Width="30"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Command="{Binding CloseAppCommand}"
+                CommandParameter="{Binding ElementName=DashboardWindow}"
+                Margin="0,60,20,0"
+                >
+
+            <Image Source="/Static Files/Images/close.png"/>
+
+        </Button>
+    </Grid>
+</Window>
