@@ -9,6 +9,13 @@
       Title="GroupPage">
 
     <Grid>
-        
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Groups,UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="Id" Binding="{Binding Id,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Faculty" Binding="{Binding Id_Faculty,Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add" Width="60" Height="40" Command="{Binding AddCommand}"/>
     </Grid>
 </Page>

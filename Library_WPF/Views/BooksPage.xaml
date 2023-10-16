@@ -13,7 +13,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn IsReadOnly="True" Header="Id" Binding="{Binding Id,Mode=TwoWay}"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name,Mode=TwoWay}"/>
-                <DataGridTextColumn Header="Pages" Binding="{Binding Page,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Pages" Binding="{Binding Pages,Mode=TwoWay}"/>
                 <DataGridTextColumn Header="YearPress" Binding="{Binding YearPress,Mode=TwoWay}"/>
                 <DataGridTextColumn Header="Id_Themes" Binding="{Binding Id_Themes,Mode=TwoWay}"/>
                 <DataGridTextColumn Header="Id_Category" Binding="{Binding Id_Category,Mode=TwoWay}"/>

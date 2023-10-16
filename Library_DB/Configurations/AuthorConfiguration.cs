@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Library_DB.Configurations
 {
@@ -13,6 +14,7 @@ namespace Library_DB.Configurations
     {
         public void Configure(EntityTypeBuilder<Author> builder)
         {
+            builder.Property(p => p.Id);
             builder.HasKey(p => p.Id);
             builder.Property(p => p.FirstName).IsRequired();
             builder.Property(p => p.LastName).IsRequired();

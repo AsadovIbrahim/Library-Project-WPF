@@ -13,13 +13,12 @@ namespace Library_WPF.ViewModels
 {
     public class AuthorPageViewModel
     {
-
         public List<Author> Authors { get; set; } = new();
         public LibraryDbContext Context { get; set; } = new();
         public RelayCommand AddCommand { get; set; }
 
         public Repository<Author> authorRepository = new();
-
+         
         public void Add(object? param)
         {
             Author newAuthor = new Author()

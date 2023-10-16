@@ -9,6 +9,15 @@
       Title="StudentPage">
 
     <Grid>
-        
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Students,UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="Id" Binding="{Binding Id,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="LastName" Binding="{Binding LastName,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Group" Binding="{Binding Id_Group,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Term" Binding="{Binding Term,Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add" Width="60" Height="40" Command="{Binding AddCommand}"/>
     </Grid>
 </Page>

@@ -9,6 +9,16 @@
       Title="TCardsPage">
 
     <Grid>
-        
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding T_Cards,UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="Id" Binding="{Binding Id,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Teacher" Binding="{Binding Id_Teacher,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Book" Binding="{Binding Id_Book,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="DateOut" Binding="{Binding DateOut,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="DateIn" Binding="{Binding DateIn,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Lib" Binding="{Binding Id_Lib,Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add" Width="60" Height="40" Command="{Binding AddCommand}"/>
     </Grid>
 </Page>

@@ -30,9 +30,6 @@ namespace Library_WPF.ViewModels
 
 
 
-
-
-
         private Frame? currentFrame;
 
         public void CloseCommand(object? param)

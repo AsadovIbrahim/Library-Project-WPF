@@ -9,6 +9,12 @@
       Title="PressPage">
 
     <Grid>
-        
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Presses,UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="Id" Binding="{Binding Id,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name,Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add" Width="60" Height="40" Command="{Binding AddCommand}"/>
     </Grid>
 </Page>
