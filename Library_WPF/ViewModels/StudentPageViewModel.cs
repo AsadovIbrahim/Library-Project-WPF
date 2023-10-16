@@ -24,6 +24,8 @@ namespace Library_WPF.ViewModels
                 Id_Group=Students.Last().Id_Group,
                 Term=Students.Last().Term,
             };
+            studentRepository.Add(newStudent);
+            studentRepository.SaveChanges();
         }
         public StudentPageViewModel(List<Student> students)
         {

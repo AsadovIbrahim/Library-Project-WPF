@@ -33,7 +33,6 @@ namespace Library_WPF.ViewModels
                 Quantity=Books.Last().Quantity,
             };
             bookRepository.Add(newBook);
-
             bookRepository.SaveChanges();
         }
        

@@ -21,6 +21,8 @@ namespace Library_WPF.ViewModels
             {
                 Name = Faculties.Last().Name
             };
+            facultyRepository.Add(newFaculty);
+            facultyRepository.SaveChanges();
         }
 
         public FacultyPageViewModel(List<Faculty> faculties)

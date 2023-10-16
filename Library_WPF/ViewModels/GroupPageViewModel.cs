@@ -22,6 +22,8 @@ namespace Library_WPF.ViewModels
                 Name=Groups.Last().Name,
                 Id_Faculty=Groups.Last().Id_Faculty,
             };
+            groupRepository.Add(newGroup);
+            groupRepository.SaveChanges();
         }
         public GroupPageViewModel(List<Group> groups)
         {
