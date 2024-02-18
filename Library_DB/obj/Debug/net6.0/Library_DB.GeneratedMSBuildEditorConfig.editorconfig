@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Library_DB
-build_property.ProjectDir = C:\Users\Asus\source\repos\Library_DB\Library_DB\
+build_property.ProjectDir = C:\Users\ASUS\Desktop\Library-Project-WPF\Library_DB\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

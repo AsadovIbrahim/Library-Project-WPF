@@ -13,7 +13,7 @@ namespace Library_DB.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-IBRAHIM\\SQLEXPRESS;Integrated Security=True;Initial Catalog=Library;Connect Timeout=30;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-G25JVEL\\SQLEXPRESS;Database=Library;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
             base.OnConfiguring(optionsBuilder);
         }
 
